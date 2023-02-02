@@ -36,5 +36,24 @@ class fibo{
             }
         }
     }
+      public static void Armstrong()
+    {
+        Scanner scan = new Scanner(System.in);
+        int num = 121;
+        int temp, rem, res=0;
+        temp=num;
+        while(temp !=0)
+        {
+            rem = temp % 10;
+            res += Math.pow(rem,3 );
+            temp /= 10;
+        }
+
+        if(res == num)
+        System.out.println("Number is Armstrong");
+        else
+            System.out.println("Number is not an armstrong");
     }
+    }
+
 }
